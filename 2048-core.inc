@@ -34,7 +34,7 @@ struct Game {
 			if(k==0) break;
 		}
 		// The new tile is 2 with probablity 90%, and 4 otherwise
-		Board[i] = (rand()%10 ? 2 : 4);
+		Board[i] = (rand()%10 ? 128 : 256);
 		// We've just occupied another tile
 		nOccupiedTiles++;
 		return true;
